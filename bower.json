@@ -1,0 +1,30 @@
+{
+  "name": "JavaScript Web Development Project Template",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cbaeza/javascript_project_template",
+  "authors": [
+    "Carlos Baeza <carlos.baeza@posteo.de>"
+  ],
+  "description": "Basic JavaScript project template for web development",
+  "main": "app.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "JavaScript",
+    "WebDev"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}
