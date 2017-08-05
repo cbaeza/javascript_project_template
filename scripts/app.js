@@ -17,14 +17,19 @@
 		sayHello: function(){
 			console.log('Hello world!');
 			//Chainable
-            return this;
+			return this;
+		},
+		sayGoodbye: function(){
+			console.log('Goodbye !');
+			//Chainable
+			return this;
 		}
 	};
 
 	// trick from jquery to avoid use of new
 	App.init.prototype = App.prototype;
 
-    // expose to global object
+	// expose to global object
 	window.my_namespace = window.my_namespace || {};
 	window.my_namespace.App = App;
 
