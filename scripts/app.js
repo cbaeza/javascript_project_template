@@ -14,6 +14,26 @@
 	};
 
 	App.prototype = {
+		loadi18nFeed: function(){
+			$( '#langu' ).load( '/feed/i18n.json', function( response, status, xhr ) {
+				if ( status == 'error' ) {
+					var msg = 'Sorry but there was an error: ';
+					console.log( msg + xhr.status + " " + xhr.statusText );
+				}
+			})
+			//Chainable
+			return this;
+		},
+		loadNews: function(){
+			$( '#news' ).load( '/feed/news.json', function( response, status, xhr ) {
+				if ( status == 'error' ) {
+					var msg = 'Sorry but there was an error: ';
+					console.log( msg + xhr.status + " " + xhr.statusText );
+				}
+			})
+			//Chainable
+			return this;
+		},
 		sayHello: function(){
 			console.log('Hello world!');
 			//Chainable
