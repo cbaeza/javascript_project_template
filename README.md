@@ -10,5 +10,6 @@ Basic JS template for web developement
 # Run
 	http-server .
 
+# Pictures
 ![Example portal](/assets/screen_shot.png "Screen shot")	
 
